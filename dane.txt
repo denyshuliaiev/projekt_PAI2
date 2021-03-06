@@ -1,0 +1,47 @@
+##Temat projektu:
+
+Sklep internetowy
+
+#Specyfikacja funkcjonalności systemu:
+
++PRODUKTY
+
+- Katalog produktów
+- Zarządzanie produktami (dodawanie, usuwanie, edycja)
+- Sortowanie produktów po nazwie produktu, cenie
+- Wyszukiwarka produktów
+
++ZAMÓWIENIA
+
+- System kontroli i obsługi zamówień
+- Drukowanie zamówień
+- Możliwosć nadawania statusu zamówienia przez administratora
+
++UŻYTKOWNICY
+
+- Rejestracja nowych użytkowników
+- Zarządzanie użytkownikami panelu (dodawanie, edycja, usuwanie)
+
++KOSZYK
+
+- Koszyk zakupów
+- Obsluga koszyka
+- Schowek
+
+#Kategorie użytkowników i ich funkcjonalności
+
+- Administrator
+* Zarządzanie produktami (dodawanie, usuwanie, edycja)
+* Responsywny panel administracyjny
+
+#Wykorzystane technologie
+
+HTML + CSS + JavaScript, możliwe MySQL
+
+#Skład zespołu
+
+- Denys Huliaiev (denis.ukraine1999@gmail.com) - Administrator
+
+*temat z Inżynieria Systemów Informacyjnych: niewybrany
+*temat z Podstaw Inżynierii Programowania: Centrum wizowy
+*temat pracy inżynierskiej: niewybrany

@@ -36,7 +36,7 @@ Sklep internetowy
 
 #Wykorzystane technologie
 
-HTML + CSS + JavaScript, możliwe MySQL
+HTML5 + CSS + JavaScript + MySQL
 
 #Skład zespołu
 

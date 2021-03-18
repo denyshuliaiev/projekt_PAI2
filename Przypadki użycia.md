@@ -26,7 +26,7 @@ jego opisem.
 
 **S1.3-4** Gdy klient chce kupic wybrany produkt, musi kliknąc na opcję Dodaj do
 
-kos zyka .
+koszyka .
 
 **S1.4 Przepływy alternatywne**
 
@@ -94,15 +94,15 @@ Klient.
 
 **S3.3 Przepływ zdarzeń**
 
-**S3.3-1** Klient wybiera opcję Kos zyk zakupów.
+**S3.3-1** Klient wybiera opcję Koszyk zakupów.
 
 **S3.3-2** System wyświetla listę uprzednio wybranych produktow.
 
-**S3.3-3** Klient wybiera opcję *Złoż zam*ówie nie .
+**S3.3-3** Klient wybiera opcję *Złoż zam*ówienie .
 
 **S3.4 Przepływy alternatywne**
 
-**PA3-2** System wyświetla informację Bra k produktów w koszyku zakupów.
+**PA3-2** System wyświetla informację Brak produktów w koszyku zakupów.
 
 **PA3-3a** Klient zmienia liczbę wybranych produktów poprzez kliknięcie na
 

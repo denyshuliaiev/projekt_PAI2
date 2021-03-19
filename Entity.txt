@@ -1,0 +1,72 @@
+package com.jee.entity;
+
+@Entity
+@Table(name = "CATEGORY")
+@NamedQueries({
+        @NamedQuery(name = "Category.findAll", query = "SELECT c FROM Category c"),
+        @NamedQuery(name = "Category.findById", query = "SELECT c FROM Category c WHERE c.id = :id"),
+        @NamedQuery(name = "Category.findByName", query = "SELECT c FROM Category c WHERE c.name = :name"),
+        @NamedQuery(name = "Category.findByTags", query = "SELECT c FROM Category c WHERE c.tags = :tags")})
+	
+
+@Entity
+@NamedQueries({
+        @NamedQuery(name = "Customer.findAll", query = "SELECT c FROM Customer c"),
+        @NamedQuery(name = "Customer.findById", query = "SELECT c FROM Customer c WHERE c.id = :id"),
+        @NamedQuery(name = "Customer.findByFirstname", query = "SELECT c FROM Customer c WHERE c.firstname = :firstname"),
+        @NamedQuery(name = "Customer.findByLastname", query = "SELECT c FROM Customer c WHERE c.lastname = :lastname"),
+        @NamedQuery(name = "Customer.findByEmail", query = "SELECT c FROM Customer c WHERE c.email = :email"),
+        @NamedQuery(name = "Customer.findByAddress", query = "SELECT c FROM Customer c WHERE c.address = :address"),
+        @NamedQuery(name = "Customer.findByCity", query = "SELECT c FROM Customer c WHERE c.city = :city")})
+	
+	
+@Entity
+@Table(name = "CUSTOMER_ORDER")
+@NamedQueries({
+        @NamedQuery(name = "CustomerOrder.findAll", query = "SELECT c FROM CustomerOrder c"),
+        @NamedQuery(name = "CustomerOrder.findById", query = "SELECT c FROM CustomerOrder c WHERE c.id = :id"),
+        @NamedQuery(name = "CustomerOrder.findByStatus", query = "SELECT c FROM CustomerOrder c, OrderStatus s WHERE c.orderStatus = s and s.status = :status"),
+        @NamedQuery(name = "CustomerOrder.findByStatusId", query = "SELECT c FROM CustomerOrder c, OrderStatus s WHERE c.orderStatus = s and s.id = :id"),
+        @NamedQuery(name = "CustomerOrder.findByCustomerId", query = "SELECT c FROM CustomerOrder c WHERE c.customer.id = :id"),
+        @NamedQuery(name = "CustomerOrder.findByAmount", query = "SELECT c FROM CustomerOrder c WHERE c.amount = :amount"),
+        @NamedQuery(name = "CustomerOrder.findByDateCreated", query = "SELECT c FROM CustomerOrder c WHERE c.dateCreated = :dateCreated")})
+	
+
+@Entity
+@Table(name = "ORDER_DETAIL")
+@NamedQueries({
+        @NamedQuery(name = "OrderDetail.findAll", query = "SELECT o FROM OrderDetail o"),
+        @NamedQuery(name = "OrderDetail.findByOrderId", query = "SELECT o FROM OrderDetail o WHERE o.pk.orderId = :orderId"),
+        @NamedQuery(name = "OrderDetail.findByProductId", query = "SELECT o FROM OrderDetail o WHERE o.pk.productId = :productId"),
+        @NamedQuery(name = "OrderDetail.findByQty", query = "SELECT o FROM OrderDetail o WHERE o.qty = :qty")})
+		
+	
+@Entity
+@Table(name = "ORDER_STATUS")
+@NamedQueries({
+        @NamedQuery(name = "OrderStatus.findAll", query = "SELECT o FROM OrderStatus o"),
+        @NamedQuery(name = "OrderStatus.findById", query = "SELECT o FROM OrderStatus o WHERE o.id = :id"),
+        @NamedQuery(name = "OrderStatus.findByStatus", query = "SELECT o FROM OrderStatus o WHERE o.status = :status")})
+	
+	
+@Entity
+@Table(name = "PERSON")
+@NamedQueries({
+        @NamedQuery(name = "Person.findAll", query = "SELECT p FROM Person p"),
+        @NamedQuery(name = "Person.findById", query = "SELECT p FROM Person p WHERE p.id = :id"),
+        @NamedQuery(name = "Person.findByFirstname", query = "SELECT p FROM Person p WHERE p.firstname = :firstname"),
+        @NamedQuery(name = "Person.findByLastname", query = "SELECT p FROM Person p WHERE p.lastname = :lastname"),
+        @NamedQuery(name = "Person.findByEmail", query = "SELECT p FROM Person p WHERE p.email = :email"),
+        @NamedQuery(name = "Person.findByAddress", query = "SELECT p FROM Person p WHERE p.address = :address"),
+        @NamedQuery(name = "Person.findByCity", query = "SELECT p FROM Person p WHERE p.city = :city")})
+	
+	
+@Entity
+@Table(name = "PRODUCT")
+@NamedQueries({
+        @NamedQuery(name = "Product.findAll", query = "SELECT p FROM Product p"),
+        @NamedQuery(name = "Product.findById", query = "SELECT p FROM Product p WHERE p.id = :id"),
+        @NamedQuery(name = "Product.findByName", query = "SELECT p FROM Product p WHERE p.name = :name"),
+        @NamedQuery(name = "Product.findByPrice", query = "SELECT p FROM Product p WHERE p.price = :price"),
+        @NamedQuery(name = "Product.findByDescription", query = "SELECT p FROM Product p WHERE p.description = :description"),
+        @NamedQuery(name = "Product.findByCategory", query = "SELECT p FROM Product p WHERE p.category.id LIKE :category")})
